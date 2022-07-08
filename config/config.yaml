@@ -1,0 +1,21 @@
+# general
+seed: 42
+workers: 8
+
+# train options
+batch_size: 128
+image_size: 224
+start_epoch: 0
+epochs: 1000
+dataset: "RSOD" # RSOD / UC-Merced / SIRI-WHU / AID / D0  / DTD / Chaoyang / CIFAR-100
+
+# model options
+feature_dim: 128
+model_path: "save/RSOD"
+reload: False
+
+# loss options
+learning_rate: 0.0003
+weight_decay: 0.
+instance_temperature: 0.5
+cluster_temperature: 1.0
