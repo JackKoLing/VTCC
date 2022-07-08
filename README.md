@@ -1,6 +1,6 @@
 # Vision Transformer for Contrastive Clustering
 
-This is the code for the paper "[Vision Transformer for Contrastive Clustering](https://arxiv.org/abs/2206.12925)."
+This is the code for the paper "[Vision Transformer for Contrastive Clustering](https://arxiv.org/abs/2206.12925)".
 
 <div align=center><img src="Figures/VTCC.png"></div>
 
