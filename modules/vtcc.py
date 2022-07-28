@@ -4,15 +4,10 @@ import torch.nn as nn
 from functools import partial, reduce
 from operator import mul
 
-from .vision_transformer import VisionTransformer, _cfg
+from .vision_transformer import VisionTransformer
 from timm.models.layers.helpers import to_2tuple
 from timm.models.layers import PatchEmbed
 
-__all__ = [
-    'vit_tiny',
-    'vit_small', 
-    'vit_base',
-    ]
 
 
 class ViT_VTCC(VisionTransformer):
@@ -104,19 +99,16 @@ def vit_tiny(**kwargs):
     model = ViT_VTCC(
         patch_size=16, embed_dim=192, depth=4, num_heads=12, mlp_ratio=4, qkv_bias=True,
         norm_layer=partial(nn.LayerNorm, eps=1e-6), embed_layer=ConvStem, **kwargs)
-    model.default_cfg = _cfg()
     return model
 
 def vit_small(**kwargs):
     model = ViT_VTCC(
         patch_size=16, embed_dim=384, depth=8, num_heads=12, mlp_ratio=4, qkv_bias=True,
         norm_layer=partial(nn.LayerNorm, eps=1e-6), embed_layer=ConvStem, **kwargs)
-    model.default_cfg = _cfg()
     return model
 
 def vit_base(**kwargs):
     model = ViT_VTCC(
         patch_size=16, embed_dim=768, depth=12, num_heads=12, mlp_ratio=4, qkv_bias=True,
         norm_layer=partial(nn.LayerNorm, eps=1e-6), embed_layer=ConvStem, **kwargs)
-    model.default_cfg = _cfg()
     return model
