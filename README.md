@@ -88,11 +88,13 @@ python cluster.py
 
 If you find VTCC useful in your research, please consider citing:
 ```
-@article{ling2022vision,
-  title={Vision Transformer for Contrastive Clustering},
+@article{ling2026vision,
+  title={Vision transformer for contrastive clustering},
   author={Ling, Hua-Bao and Zhu, Bowen and Huang, Dong and Chen, Ding-Hua and Wang, Chang-Dong and Lai, Jian-Huang},
-  journal={arXiv preprint arXiv:2206.12925},
-  year={2022}
+  journal={Knowledge-Based Systems},
+  pages={115721},
+  year={2026},
+  publisher={Elsevier}
 }
 ```
 
